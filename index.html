@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Picaña Parrilla - Links</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Reservas, carta y redes oficiales de Picaña Parrilla."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <!-- Logo -->
+      <div class="logo-wrapper">
+        <!-- Reemplazá el src por tu logo real, ej: /picania-logo.png -->
+        <img
+          src="logo-picania.png"
+          alt="Picaña Parrilla"
+          class="logo"
+        />
+      </div>
+
+      <h1 class="title">Picaña Parrilla</h1>
+      <p class="subtitle">
+        Reservas, carta y redes en un solo lugar.
+      </p>
+
+      <div class="links">
+        <!-- 💡 Reemplazá los href por tus links reales -->
+        <a
+          class="link-button"
+          href="https://tu-link-de-reservas.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Reservas online
+        </a>
+
+        <a
+          class="link-button"
+          href="https://tu-menu-online.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ver la carta
+        </a>
+
+        <a
+          class="link-button"
+          href="https://instagram.com/picania"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+
+        <a
+          class="link-button"
+          href="https://wa.me/5493410000000"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+      </div>
+
+      <p class="footer">
+        © <span id="year"></span> Picaña Parrilla
+      </p>
+    </section>
+  </main>
+
+  <script>
+    // Año automático en el footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
