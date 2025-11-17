@@ -85,7 +85,10 @@ body {
 
 /* Botón/link */
 .link-button {
-  display: block;
+  display: flex;                 /* 🔥 SIEMPRE FLEX */
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;                     /* espacio icono-texto */
   width: 100%;
   padding: 13px 16px;
   border-radius: 18px;
@@ -95,13 +98,13 @@ body {
   font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
-  text-align: center;
   transition:
     background 0.18s ease,
     color 0.18s ease,
     transform 0.15s ease,
     box-shadow 0.18s ease;
 }
+
 
 .link-button:hover {
   background: var(--bg-color);
