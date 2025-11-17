@@ -4,88 +4,87 @@
   <meta charset="UTF-8" />
   <title>Picaña - Links</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Reservas, carta y redes oficiales de Picaña Parrilla."
-  />
+  <meta name="description" content="Reservas, carta y redes oficiales de Picaña Parrilla." />
+
+  <!-- Iconos Remix (NO SE ROMPE NUNCA) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <main class="page">
     <section class="card">
+
       <!-- Logo -->
       <div class="logo-wrapper">
-        <!-- Reemplazá el src por tu logo real, ej: /picania-logo.png -->
-        <img
-          src="logopicania.png"
-          alt="Picaña Parrilla"
-          class="logo"
-        />
+        <img src="logopicania.png" alt="Picaña Parrilla" class="logo" />
       </div>
 
       <h1 class="title">PICAÑA</h1>
+
       <p class="subtitle">
-       Lun a Vie de 19:30 al cierre || Sáb y Dom de 12:00 a 15:30 y 19:30 al cierre
+        Lun a Vie de 19:30 al cierre || Sáb y Dom de 12:00 a 15:30 y 19:30 al cierre
       </p>
 
+      <!-- LINKS CON ICONOS -->
       <div class="links">
-        <!-- 💡 Reemplazá los href por tus links reales -->
-        <a
-          class="link-button"
-          href="https://www.wokiapp.com/restaurante/picana?slug=picana&enterByLink=true&quantity=4&showDay=2025-11-16T22%3A00%3A00Z&policy=&isTimeFlexible=false&isSectorFlexible=false&id=c5562dcd-610f-4a46-9cb9-e8fb16b46853"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+
+        <a class="link-button"
+           href="https://www.wokiapp.com/restaurante/picana?slug=picana&enterByLink=true&quantity=4&showDay=2025-11-16T22%3A00%3A00Z&policy=&isTimeFlexible=false&isSectorFlexible=false&id=c5562dcd-610f-4a46-9cb9-e8fb16b46853"
+           target="_blank">
+          <i class="ri-store-2-line icon"></i>
           Reservas online
         </a>
 
-        <a
-          class="link-button"
-          href="https://mimenulatech.com/picania/menu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a class="link-button"
+           href="https://mimenulatech.com/picania/menu"
+           target="_blank">
+          <i class="ri-book-open-line icon"></i>
           Ver la carta
         </a>
 
-        <a
-          class="link-button"
-          href="https://www.instagram.com/picaniarosario/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
-
-        <a
-          class="link-button"
-          href="https://wa.me/5493415039986"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a class="link-button"
+           href="https://wa.me/5493415039986"
+           target="_blank">
+          <i class="ri-whatsapp-line icon"></i>
           WhatsApp
         </a>
 
-        <a
-  class="link-button"
-  href="https://maps.app.goo.gl/6CU4ZTWoRq9hkQE29"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Ubicación
-</a>
+        <a class="link-button"
+           href="https://maps.app.goo.gl/6CU4ZTWoRq9hkQE29"
+           target="_blank">
+          <i class="ri-map-pin-line icon"></i>
+          Ubicación
+        </a>
+
+        <a class="link-button"
+           href="https://www.instagram.com/picaniarosario/"
+           target="_blank">
+          <i class="ri-instagram-line icon"></i>
+          Instagram
+        </a>
+
+        <a class="link-button"
+           href="https://docs.google.com/forms/d/e/1FAIpQLSeeWUD43sNKwrkGrfbcbjcWFXwm-xlk7P4lv6Rgy3wFjg1JyA/viewform"
+           target="_blank">
+          <i class="ri-hand-coin-line icon"></i>
+          Trabajá con nosotros
+        </a>
 
       </div>
 
       <p class="footer">
-        © <span id="year"></span> Picaña 
+        © <span id="year"></span> Picaña
       </p>
+
     </section>
   </main>
 
   <script>
-    // Año automático en el footer
+    // Año automático
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
