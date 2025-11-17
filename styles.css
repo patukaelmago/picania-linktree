@@ -37,7 +37,7 @@ body {
   background: var(--accent-color);
   color: var(--text-main);
   border-radius: 24px;
-  padding: 64px 26px 70px;      /* más larga y aireada */
+  padding: 54px 26px 70px;      /* más larga y aireada */
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
   text-align: center;
 }
@@ -46,7 +46,7 @@ body {
 .logo-wrapper {
   width: 96px;
   height: 96px;
-  margin: 0 auto 18px;
+  margin: 0 auto 26px;
   border-radius: 50%;
   overflow: hidden;
   background: transparent;
@@ -127,7 +127,7 @@ body {
 
 /* Footer */
 .footer {
-  margin-top: 22px;
+  margin-top: 32px;
   font-size: 0.75rem;
   color: rgba(27, 48, 89, 0.7);
 }
