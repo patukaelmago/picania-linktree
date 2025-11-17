@@ -32,12 +32,12 @@ body {
 }
 
 .card {
-  width: 100%;
-  max-width: 420px;
+  width: 92%;                   /* más finita en mobile */
+  max-width: 360px;             /* más angosta en PC (antes 420px) */
   background: var(--accent-color);
   color: var(--text-main);
   border-radius: 24px;
-  padding: 28px 22px 22px;
+  padding: 42px 26px 48px;       /* más larga y aireada */
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
   text-align: center;
 }
@@ -46,15 +46,13 @@ body {
 .logo-wrapper {
   width: 96px;
   height: 96px;
-  margin: 0 auto 12px;
+  margin: 0 auto 18px;
   border-radius: 50%;
   overflow: hidden;
-  /*border: 3px solid var(--bg-color);*/
-  background: #f0e3c7;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
 }
 
 .logo {
@@ -65,36 +63,36 @@ body {
 
 /* Textos */
 .title {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 700;
   letter-spacing: 0.03em;
 }
 
 .subtitle {
-  margin-top: 4px;
-  font-size: 0.9rem;
-  color: rgba(27, 48, 89, 0.7);
+  margin-top: 6px;
+  font-size: 0.92rem;
+  color: rgba(27, 48, 89, 0.75);
 }
 
 /* Lista de links */
 .links {
-  margin-top: 18px;
+  margin-top: 22px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 /* Botón/link */
 .link-button {
   display: block;
   width: 100%;
-  padding: 12px 16px;
+  padding: 13px 16px;
   border-radius: 999px;
   border: 2px solid var(--bg-color);
   background: transparent;
   color: var(--bg-color);
   font-weight: 600;
-  font-size: 0.98rem;
+  font-size: 1rem;
   text-decoration: none;
   text-align: center;
   transition:
@@ -104,7 +102,6 @@ body {
     box-shadow 0.18s ease;
 }
 
-/* Hover: invertimos colores y levantamos un toque */
 .link-button:hover {
   background: var(--bg-color);
   color: var(--accent-color);
@@ -112,24 +109,25 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
 }
 
-/* En móvil chicos queda un toque más compacto */
+/* Mobile */
 @media (max-width: 480px) {
   .card {
-    padding: 24px 18px 18px;
+    padding: 36px 22px 42px;   /* sigue larga pero más compacta */
+    max-width: 94%;
   }
 
   .title {
-    font-size: 1.4rem;
+    font-size: 1.55rem;
   }
 
   .link-button {
-    padding: 11px 14px;
+    padding: 12px 14px;
   }
 }
 
 /* Footer */
 .footer {
-  margin-top: 18px;
+  margin-top: 22px;
   font-size: 0.75rem;
   color: rgba(27, 48, 89, 0.7);
 }
