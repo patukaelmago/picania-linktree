@@ -108,13 +108,19 @@ body {
   color: var(--accent-color);
   transform: translateY(-1px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
 }
 
 .icon {
-  font-size: 20px;
-  margin-right: 12px;
+  font-size: 28px;
+  margin-right: 14px;
   color: #1b3059;
   vertical-align: middle;
+  transform: translateY(-1px);
+  font-weight: 200;  /* extra-light */
 }
 
 .link-button:hover .icon {
