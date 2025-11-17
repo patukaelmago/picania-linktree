@@ -110,6 +110,17 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
 }
 
+.icon {
+  font-size: 20px;
+  margin-right: 12px;
+  color: #1b3059;
+  vertical-align: middle;
+}
+
+.link-button:hover .icon {
+  color: #fff7e3;
+}
+
 /* Mobile */
 @media (max-width: 480px) {
   .card {
