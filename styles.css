@@ -14,13 +14,21 @@
   padding: 0;
 }
 
+html, body {
+  overscroll-behavior: none;
+  touch-action: manipulation;
+}
+
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   min-height: 100vh;
   background: radial-gradient(circle at top, #2c477e, var(--bg-color));
   color: var(--text-light);
+  overflow-x: hidden;     /* 🔥 bloquea scroll lateral */
+  overscroll-behavior: none;
+  touch-action: manipulation;
 }
+
 
 /* Centrado de la card */
 .page {
@@ -29,7 +37,11 @@ body {
   align-items: center;
   justify-content: center;
   padding: 24px;
+  width: 100%;            /* 🔥 asegura ancho total */
+  max-width: 100%;
+  overflow: hidden;       /* 🔥 evita arrastre */
 }
+
 
 .card {
   width: 92%;                   /* más finita en mobile */
